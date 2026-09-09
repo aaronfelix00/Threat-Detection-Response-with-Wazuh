@@ -703,13 +703,13 @@ data.win.system.eventID
 
 *Figure 19 — Windows Security Event ID 4688 confirming process-creation auditing.*
 
-![Wazuh Threat Hunting Windows Event](evidence/Fig.%2020%20-%20Wazuh%20Threat%20Hunting%20WIndows%20Event.png)
+![Wazuh Threat Hunting Windows Event](evidence/Fig20_Wazuh_threat_hunting_windows_event.png)
 
-![Wazuh Threat Hunting Windows Event 1a](evidence/Fig.%2020%20-%20Wazuh%20Threat%20Hunting%20WIndows%20Event%201a.png)
+![Wazuh Threat Hunting Windows Event 1a](evidence/Fig20_Wazuh_threat_hunting_windows_event_1a.png)
 
-![Wazuh Threat Hunting Windows Event 1b](evidence/Fig.%2020%20-%20Wazuh%20Threat%20Hunting%20WIndows%20Event%201b.png)
+![Wazuh Threat Hunting Windows Event 1b](evidence/Fig20_Wazuh_threat_hunting_windows_event_1b.png)
 
-![Wazuh Threat Hunting Windows Event 1c](evidence/Fig.%2020%20-%20Wazuh%20Threat%20Hunting%20WIndows%20Event%201c.png)
+![Wazuh Threat Hunting Windows Event 1c](evidence/Fig20_Wazuh_threat_hunting_windows_event_1c.png)
 
 *Figure 20 — Wazuh Threat Hunting event showing Windows process creation from Windows-Endpoint.*
 
@@ -934,11 +934,11 @@ Wazuh collection:
   
 *Figure 25 — Windows endpoint confirming ARM64 architecture.*
 
-![ARM64 Sysmon installed and running](evidence/Fig.%2026%20-%20ARM64%20Sysmon%20installed%20and%20running%20successfully.png)
+![ARM64 Sysmon Installed and Running](evidence/Fig26_ARM64_sysmon_installed_and_running_successfully.png)
  
 *Figure 26 — ARM64 Sysmon installed and running successfully.*
 
-![Sysmon Event ID 1](evidence/Fig.%2027%20-%20Sysmon%20Event%20ID%201.png)
+![Sysmon Event ID 1](evidence/Fig27_Sysmon_event_ID_1.png)
 
 *Figure 27 — Sysmon Event ID 1 showing process creation telemetry.*
 
@@ -1116,15 +1116,15 @@ rule.id
 
 This connected ATT&CK techniques directly to indexed endpoint events.
 
-![Windows MITRE Events](evidence/Fig. 31 - Windows MITRE - Events.png)
+![Windows MITRE Events](evidence/Fig31_windows_MITRE_events.png)
 
 *Figure 31 — Wazuh MITRE Events view linking real Windows endpoint detections to ATT&CK techniques.*
 
-![Windows MITRE Event Expanded 1a](evidence/Fig. 32 - Windows MITRE - Event Expanded 1a.png)
+![Windows MITRE Event Expanded 1a](evidence/Fig32_windows_MITRE_event_expanded_1a.png)
 
-![Windows MITRE Event Expanded 1b](evidence/Fig. 32 - Windows MITRE - Event Expanded 1b.png)
+![Windows MITRE Event Expanded 1b](evidence/Fig32_windows_MITRE_event_expanded_1b.png)
 
-![Windows MITRE Event Expanded 1c](evidence/Fig. 32 - Windows MITRE - Event Expanded 1c.png)
+![Windows MITRE Event Expanded 1c](evidence/Fig32_windows_MITRE_event_expanded_1c.png)
  
 *Figure 32 — Expanded Wazuh event showing ATT&CK metadata, rule information, endpoint, and timestamp.*
 
@@ -1295,7 +1295,7 @@ Required final evidence:
 - connectivity validation,
 - automatic or manual recovery.
 
-![Wazuh Active Response Log](evidence/Fig.%2037%20-%20Wazuh%20Active%20Response%20Log.png)
+![Wazuh Active Response Log](evidence/Fig30_Wazuh_Active_Response_Log.png)
 
 *Figure 37 — Endpoint Active Response log confirming execution.*
 
