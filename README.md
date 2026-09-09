@@ -540,7 +540,7 @@ Additional local sources included:
 /var/log/dpkg.log
 ```
 
-This provides operating-system telemetry without requiring all events to be duplicated into traditional syslog files.
+This provides operating-system telemetry without duplicating all events into traditional syslog files.
 
 ![Wazuh agent collecting Ubuntu journald telemetry](evidence/Fig.%2015%20-%20Wazuh%20agent%20collecting%20Ubuntu%20journald%20telemetry.png)
 
@@ -550,7 +550,7 @@ This provides operating-system telemetry without requiring all events to be dupl
 
 # 13. auditd Integration
 
-Auditd was added to increase Linux visibility.
+Added auditd to increase Linux visibility.
 
 Installation:
 
@@ -589,6 +589,7 @@ sudo ausearch -ts recent
 ```
 
 ![Auditd enabled on Ubuntu Desktop](evidence/Fig.%2016%20-%20Auditd%20enabled%20on%20Ubuntu%20Desktop.png)
+
 *Figure 16 — auditd enabled on Ubuntu Desktop for Linux audit telemetry.*
 
 ![VirtualBox VM Inventory](evidence/Wazuh%20configured%20to%20collect%20audit%20logs.png)
@@ -632,6 +633,7 @@ TcpTestSucceeded : True
 ```
 
 ![VirtualBox VM Inventory](evidence/Windows%20Endpoint%20Configured%20on%20internal%20network%201a.png) 
+
 ![VirtualBox VM Inventory](evidence/Windows%20Endpoint%20Configured%20on%20internal%20network%201b.png) 
 
 *Figure 18 — Windows Endpoint configured as 192.168.50.40 on the wazuh-lab network.*
