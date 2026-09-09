@@ -20,7 +20,7 @@
 
 This project implements a complete threat detection and response laboratory using Wazuh as the central SIEM/EDR platform. The environment was designed to simulate a small but realistic Security Operations Center (SOC) architecture with dedicated systems for attack simulation, endpoint monitoring, containerized application hosting, event collection, detection, investigation, MITRE ATT&CK mapping, and incident analysis.
 
-The lab was rebuilt from the ground up on a MacBook using Apple Silicon. VirtualBox was used to host four primary virtual machines:
+The lab was rebuilt from the ground up on an Apple Silicon MacBook. VirtualBox was used to host four primary virtual machines:
 
 - a Wazuh security monitoring server,
 - a Kali Linux security-testing workstation,
@@ -182,7 +182,7 @@ Architecture: ARM64 / Apple Silicon
 
 The ARM64 architecture significantly influenced deployment decisions, especially for Windows Sysmon and Linux display integration.
 
-> ![VirtualBox VM Inventory](evidence/VirtualBox%20Showing%20all%20VMs.png)
+![VirtualBox VM Inventory](evidence/VirtualBox%20Showing%20all%20VMs.png)
 *Figure 1 — VirtualBox showing the Wazuh Server, Kali Linux, Windows Endpoint, and Ubuntu Desktop virtual machines used in the lab.*
 
 ---
