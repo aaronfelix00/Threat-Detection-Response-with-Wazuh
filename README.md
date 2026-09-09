@@ -699,7 +699,7 @@ data.win.eventdata.subjectUserName
 data.win.system.eventID
 ```
 
-![Windows Security Event ID 4688](evidence/Fig.%2019%20-%20Windows%20Security%20Event%20ID%204688.png)
+![VirtualBox VM Inventory](evidence/Fig19%20Windows%20Security%20Event%20ID.png)
 
 *Figure 19 — Windows Security Event ID 4688 confirming process-creation auditing.*
 
@@ -934,11 +934,11 @@ Wazuh collection:
   
 *Figure 25 — Windows endpoint confirming ARM64 architecture.*
 
-![ARM64 Sysmon Installed and Running](evidence/Fig26_ARM64_sysmon_installed_and_running_successfully.png)
+![ARM64 Sysmon Installed and Running](evidence/Fig26%20ARM64%20sysmon%20installed%20and%20running%20successfully.png)
  
 *Figure 26 — ARM64 Sysmon installed and running successfully.*
 
-![Sysmon Event ID 1](evidence/Fig27_Sysmon_event_ID_1.png)
+![Sysmon Event ID 1](evidence/Fig27%20sysmon%20event%20ID.png)
 
 *Figure 27 — Sysmon Event ID 1 showing process creation telemetry.*
 
@@ -1116,7 +1116,7 @@ rule.id
 
 This connected ATT&CK techniques directly to indexed endpoint events.
 
-![Windows MITRE Events](evidence/Fig31_windows_MITRE_events.png)
+![Windows MITRE Events](evidence/Fig31%20windows%20MITRE%20events.png)
 
 *Figure 31 — Wazuh MITRE Events view linking real Windows endpoint detections to ATT&CK techniques.*
 
@@ -1295,7 +1295,7 @@ Required final evidence:
 - connectivity validation,
 - automatic or manual recovery.
 
-![Wazuh Active Response Log](evidence/Fig37_Wazuh_Active_Response_Log.png)
+![Wazuh Active Response Log](evidence/Fig37%20Wazuh%20Active%20Response%20Log.png)
 
 *Figure 37 — Endpoint Active Response log confirming execution.*
 
