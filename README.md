@@ -9,8 +9,8 @@
 **Internal lab network:** `wazuh-lab` — `192.168.50.0/24`  
 **Attacker / test workstation:** Kali Linux — `192.168.50.10`  
 **Wazuh Server:** Ubuntu Server — `192.168.50.20`  
+**Linux / container endpoint:** Ubuntu Desktop hosting OWASP Juice Shop in Docker — `192.168.50.30` 
 **Windows Endpoint:** Windows ARM64 — `192.168.50.40`  
-**Linux / container endpoint:** Ubuntu Desktop hosting OWASP Juice Shop in Docker  
 **Application:** OWASP Juice Shop — TCP/3000  
 
 ---
@@ -31,7 +31,7 @@ The project focuses on validating the complete detection pipeline rather than si
 ```text
 Security activity
       ↓
-Endpoint / application telemetry
+Endpoint/application telemetry
       ↓
 Wazuh agent
       ↓
@@ -47,7 +47,7 @@ MITRE ATT&CK
       ↓
 Investigation
       ↓
-Response / validation
+Response/validation
 ```
 
 Validated capabilities include:
