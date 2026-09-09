@@ -322,12 +322,10 @@ The dashboard administrator password was changed from the generated installation
 
 ![VirtualBox VM Inventory](evidence/Wazuh%20components%20active%20validation.png)
 
-> *Figure 7 — Wazuh Manager, Indexer, Dashboard, and Filebeat services running successfully.*
+*Figure 7 — Wazuh Manager, Indexer, Dashboard, and Filebeat services running successfully.*
 
-### Evidence Placeholder
-
-> **Insert Screenshot:** Wazuh Dashboard login / main page  
-> **Suggested caption:** *Figure 8 — Wazuh Dashboard successfully accessible from the host system.*
+![VirtualBox VM Inventory](evidence/Wazuh%20Dashboard%20Login%20Page.png) 
+*Figure 8 — Wazuh Dashboard successfully accessible from the host system.*
 
 ---
 
@@ -363,10 +361,8 @@ A major troubleshooting lesson was that the exact Windows service name should be
 WazuhSvc
 ```
 
-### Evidence Placeholder
-
-> **Insert Screenshot:** Wazuh Endpoints / Agents view  
-> **Suggested caption:** *Figure 9 — Wazuh Dashboard showing the monitored endpoints and their connection status.*
+![VirtualBox VM Inventory](evidence/Agents%20-%20Wazuh%20Dashboard.png) 
+*Figure 9 — Wazuh Dashboard showing the monitored endpoints and their connection status.*
 
 ---
 
