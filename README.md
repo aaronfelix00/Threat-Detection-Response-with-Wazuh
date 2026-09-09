@@ -322,8 +322,8 @@ The dashboard administrator password was changed from the generated installation
 
 ### Evidence Placeholder
 
-> **Insert Screenshot:** Wazuh service status  
-> **Suggested caption:** *Figure 7 — Wazuh Manager, Indexer, Dashboard, and Filebeat services running successfully.*
+> ![VirtualBox VM Inventory](evidence/Wazuh%20components%20active%20validation.png) 
+*Figure 7 — Wazuh Manager, Indexer, Dashboard, and Filebeat services running successfully.*
 
 ### Evidence Placeholder
 
