@@ -182,10 +182,8 @@ Architecture: ARM64 / Apple Silicon
 
 The ARM64 architecture significantly influenced deployment decisions, especially for Windows Sysmon and Linux display integration.
 
-### Evidence Placeholder
-
-> **Insert Screenshot:** Host system / VirtualBox environment  
-> **Suggested caption:** *Figure 1 — Apple Silicon host and VirtualBox environment used to run the Wazuh security lab.*
+> ![VirtualBox VM Inventory](evidence/VirtualBox%20Showing%20all%20VMs.png)
+*Figure 2 — VirtualBox showing the Wazuh Server, Kali Linux, Windows Endpoint, and Ubuntu Desktop virtual machines used in the lab.*
 
 ---
 
