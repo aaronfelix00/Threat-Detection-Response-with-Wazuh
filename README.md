@@ -197,7 +197,7 @@ The ARM64 architecture significantly influenced deployment decisions, especially
 | Ubuntu Desktop | Ubuntu Desktop | Linux endpoint and Docker host |
 | OWASP Juice Shop | Docker container | Intentionally vulnerable web application |
 
-> ![VirtualBox VM Inventory](evidence/VirtualBox%20Showing%20all%20VMs.png)
+![VirtualBox VM Inventory](evidence/VirtualBox%20Showing%20all%20VMs.png)
 *Figure 2 — VirtualBox showing the Wazuh Server, Kali Linux, Windows Endpoint, and Ubuntu Desktop virtual machines used in the lab.*
 
 ---
@@ -263,16 +263,16 @@ The lab network does not use a gateway on the internal adapter. The NAT adapter 
                          TCP/3000
 ```
 
-> ![VirtualBox VM Inventory](evidence/Kali%20IP.png)
+![VirtualBox VM Inventory](evidence/Kali%20IP.png)
 *Figure 3 — Kali Linux configured with internal address 192.168.50.10.*
 
-> ![VirtualBox VM Inventory](evidence/Wazuh%20IP.png)
+![VirtualBox VM Inventory](evidence/Wazuh%20IP.png)
 *Figure 4 — Wazuh Server configured with internal address 192.168.50.20.*
 
-> ![VirtualBox VM Inventory](evidence/Ubuntu%20IP.png) 
+![VirtualBox VM Inventory](evidence/Ubuntu%20IP.png) 
 *Figure 5 — Ubuntu Desktop configured with internal address 192.168.50.30.*
 
-> ![VirtualBox VM Inventory](evidence/Windows%20IP.png) 
+![VirtualBox VM Inventory](evidence/Windows%20IP.png) 
 *Figure 6 — Windows Endpoint configured with internal address 192.168.50.40.*
 
 ---
@@ -320,9 +320,7 @@ The Wazuh server internal address is:
 
 The dashboard administrator password was changed from the generated installation password to a user-defined password using the supported Wazuh password-management process.
 
-### Evidence Placeholder
-
-> ![VirtualBox VM Inventory](evidence/Wazuh%20components%20active%20validation.png)
+![VirtualBox VM Inventory](evidence/Wazuh%20components%20active%20validation.png)
 
 > *Figure 7 — Wazuh Manager, Indexer, Dashboard, and Filebeat services running successfully.*
 
