@@ -932,7 +932,7 @@ Wazuh collection:
   
 *Figure 25 — Windows endpoint confirming ARM64 architecture.*
 
-![ARM64 Sysmon Installed and Running](evidence/Fig26%20sysmon%20installed%20and%20running%20successfully.png)
+![ARM64 Sysmon Installed and Running](evidence/sysmon%20installed%20and%20running%20succesfully.png)
  
 *Figure 26 — ARM64 Sysmon installed and running successfully.*
 
