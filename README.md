@@ -463,6 +463,7 @@ The application was successfully accessed from Kali across the internal lab netw
 *Figure 11 — OWASP Juice Shop running as a Docker container on Ubuntu Desktop.*
 
 ![VirtualBox VM Inventory](evidence/Juice%20Shop%20open%20from%20Kali.png) 
+
 *Figure 12 — OWASP Juice Shop successfully accessed from Kali over the internal lab network.*
 
 ---
@@ -510,9 +511,11 @@ sudo systemctl status wazuh-agent --no-pager
 ```
 
 ![VirtualBox VM Inventory](evidence/Juice%20Shop%20Running%20as%20Docker%20on%20Ubuntu%20Desktop.png) 
+
 *Figure 13 — Raw Docker JSON logs for the Juice Shop container.*
 
 ![VirtualBox VM Inventory](evidence/Wazuh%20Docker%20localfile%20configuration.png)
+
 *Figure 14 — Ubuntu Wazuh agent configured to collect Docker JSON logs.*
 
 ---
@@ -540,6 +543,7 @@ Additional local sources included:
 This provides operating-system telemetry without requiring all events to be duplicated into traditional syslog files.
 
 ![VirtualBox VM Inventory](evidence/Wazuh%20agent%20collecting%20Ubuntu%20journald%20telemetry.png) 
+
 *Figure 15 — Wazuh agent configured to collect Ubuntu journald telemetry.*
 
 ---
@@ -585,9 +589,11 @@ sudo ausearch -ts recent
 ```
 
 ![VirtualBox VM Inventory](evidence/Auditd%20enabled%20on%20Ubuntu%20Desktop.png)
+
 *Figure 16 — auditd enabled on Ubuntu Desktop for Linux audit telemetry.*
 
 ![VirtualBox VM Inventory](evidence/Wazuh%20configured%20to%20collect%20audit%20logs.png)
+
 *Figure 17 — Wazuh configured to collect `/var/log/audit/audit.log`.*
 
 ---
@@ -626,10 +632,10 @@ Successful communication:
 TcpTestSucceeded : True
 ```
 
-### Evidence Placeholder
+![VirtualBox VM Inventory](evidence/Windows%20Endpoint%20Configured%20on%20internal%20network%201a.png) 
+![VirtualBox VM Inventory](evidence/Windows%20Endpoint%20Configured%20on%20internal%20network%201b.png) 
 
-> **Insert Screenshot:** Windows network configuration  
-> **Suggested caption:** *Figure 18 — Windows Endpoint configured as 192.168.50.40 on the wazuh-lab network.*
+*Figure 18 — Windows Endpoint configured as 192.168.50.40 on the wazuh-lab network.*
 
 ---
 
@@ -691,15 +697,16 @@ data.win.eventdata.subjectUserName
 data.win.system.eventID
 ```
 
-### Evidence Placeholder
+![VirtualBox VM Inventory](evidence/Windows%20Security%20Event%20ID%204688.png) 
 
-> **Insert Screenshot:** Local Windows 4688 event  
-> **Suggested caption:** *Figure 19 — Windows Security Event ID 4688 confirming process-creation auditing.*
+*Figure 19 — Windows Security Event ID 4688 confirming process-creation auditing.*
 
-### Evidence Placeholder
+![VirtualBox VM Inventory](evidence/Wazuh%20Threat%20Hunting%20WIndows%20Event.png) 
+![VirtualBox VM Inventory](evidence/Wazuh%20Threat%20Hunting%20WIndows%20Event%201a.png)  
+![VirtualBox VM Inventory](evidence/Wazuh%20Threat%20Hunting%20WIndows%20Event%201b.png) 
+![VirtualBox VM Inventory](evidence/Wazuh%20Threat%20Hunting%20WIndows%20Event%201c.png) 
 
-> **Insert Screenshot:** 4688 event in Wazuh  
-> **Suggested caption:** *Figure 20 — Wazuh Threat Hunting event showing Windows process creation from Windows-Endpoint.*
+*Figure 20 — Wazuh Threat Hunting event showing Windows process creation from Windows-Endpoint.*
 
 ---
 
