@@ -1295,7 +1295,7 @@ Required final evidence:
 - connectivity validation,
 - automatic or manual recovery.
 
-![Wazuh Active Response Log](evidence/Fig30_Wazuh_Active_Response_Log.png)
+![Wazuh Active Response Log](evidence/Fig37_Wazuh_Active_Response_Log.png)
 
 *Figure 37 — Endpoint Active Response log confirming execution.*
 
