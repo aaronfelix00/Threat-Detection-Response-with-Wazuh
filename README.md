@@ -1116,15 +1116,15 @@ rule.id
 
 This connected ATT&CK techniques directly to indexed endpoint events.
 
-![Windows MITRE Events](evidence/Fig.%2031%20-%20Windows%20MITRE%20-%20Events.png)
+![Windows MITRE Events](evidence/Fig. 31 - Windows MITRE - Events.png)
 
 *Figure 31 — Wazuh MITRE Events view linking real Windows endpoint detections to ATT&CK techniques.*
 
-![Windows MITRE Event Expanded 1a](evidence/Fig.%2032%20-%20Windows%20MITRE%20-%20Event%20Expanded%201a.png)
+![Windows MITRE Event Expanded 1a](evidence/Fig. 32 - Windows MITRE - Event Expanded 1a.png)
 
-![Windows MITRE Event Expanded 1b](evidence/Fig.%2032%20-%20Windows%20MITRE%20-%20Event%20Expanded%201b.png)
+![Windows MITRE Event Expanded 1b](evidence/Fig. 32 - Windows MITRE - Event Expanded 1b.png)
 
-![Windows MITRE Event Expanded 1c](evidence/Fig.%2032%20-%20Windows%20MITRE%20-%20Event%20Expanded%201c.png)
+![Windows MITRE Event Expanded 1c](evidence/Fig. 32 - Windows MITRE - Event Expanded 1c.png)
  
 *Figure 32 — Expanded Wazuh event showing ATT&CK metadata, rule information, endpoint, and timestamp.*
 
