@@ -703,13 +703,13 @@ data.win.system.eventID
 
 *Figure 19 — Windows Security Event ID 4688 confirming process-creation auditing.*
 
-![Wazuh Threat Hunting Windows Event 1a](evidence/Fig.%2020%20-%20Wazuh%20Threat%20Hunting%20Windows%20Event%201a.png)
+![Wazuh Threat Hunting Windows Event](evidence/Fig.%2020%20-%20Wazuh%20Threat%20Hunting%20WIndows%20Event.png)
 
-![Wazuh Threat Hunting Windows Event 1b](evidence/Fig.%2020%20-%20Wazuh%20Threat%20Hunting%20Windows%20Event%201b.png)
+![Wazuh Threat Hunting Windows Event 1a](evidence/Fig.%2020%20-%20Wazuh%20Threat%20Hunting%20WIndows%20Event%201a.png)
 
-![Wazuh Threat Hunting Windows Event 1c](evidence/Fig.%2020%20-%20Wazuh%20Threat%20Hunting%20Windows%20Event%201c.png)
+![Wazuh Threat Hunting Windows Event 1b](evidence/Fig.%2020%20-%20Wazuh%20Threat%20Hunting%20WIndows%20Event%201b.png)
 
-![Wazuh Threat Hunting Windows Event](evidence/Fig.%2020%20-%20Wazuh%20Threat%20Hunting%20Windows%20Event.png)
+![Wazuh Threat Hunting Windows Event 1c](evidence/Fig.%2020%20-%20Wazuh%20Threat%20Hunting%20WIndows%20Event%201c.png)
 
 *Figure 20 — Wazuh Threat Hunting event showing Windows process creation from Windows-Endpoint.*
 
