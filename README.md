@@ -462,8 +462,7 @@ The application was successfully accessed from Kali across the internal lab netw
 ![VirtualBox VM Inventory](evidence/Juice%20Shop%20Running%20as%20Docker%20on%20Ubuntu.png) 
 *Figure 11 — OWASP Juice Shop running as a Docker container on Ubuntu Desktop.*
 
-![VirtualBox VM Inventory](evidence/Juice%20Shop%20open%20from%20Kali.png) 
-
+![Juice Shop open from Kali](evidence/Fig.%2012%20-%20Juice%20Shop%20open%20from%20Kali.png)
 *Figure 12 — OWASP Juice Shop successfully accessed from Kali over the internal lab network.*
 
 ---
