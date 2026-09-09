@@ -519,20 +519,6 @@ Validation:
 sudo systemctl status wazuh-agent --no-pager
 ```
 
-A key troubleshooting point was the correct Docker log path.
-
-Incorrect:
-
-```text
-/var/lib/docker/containers/<ID>-json.log
-```
-
-Correct:
-
-```text
-/var/lib/docker/containers/<ID>/<ID>-json.log
-```
-
 ### Evidence Placeholder
 
 > **Insert Screenshot:** Docker JSON log output  
@@ -681,18 +667,6 @@ Configured categories included:
 - Process Creation
 - Process Termination
 - Filtering Platform Connection
-
-Example:
-
-```powershell
-auditpol /set /subcategory:"Process Creation" /success:enable /failure:enable
-```
-
-Validation:
-
-```powershell
-auditpol /get /category:*
-```
 
 ---
 
@@ -856,12 +830,6 @@ The Wazuh alert also displayed:
 data.win.eventdata.scriptBlockText
 ```
 
-Example content observed during the lab:
-
-```text
-Get-ChildItem C:\
-```
-
 This validated the complete PowerShell telemetry path from script execution to SIEM visibility.
 
 ### Evidence Placeholder
@@ -939,27 +907,7 @@ Sysmon64.exe
 Sysmon64a.exe
 ```
 
-Initial use of:
-
-```text
-Sysmon64.exe
-```
-
-caused:
-
-```text
-The driver has been blocked from loading
-```
-
-and left a partially registered `Sysmon64` service.
-
-The correct executable for Windows ARM64 was:
-
-```text
-Sysmon64a.exe
-```
-
-After stale service cleanup, installation used:
+Installation used:
 
 ```powershell
 cd C:\Tools\Sysmon
@@ -1262,7 +1210,7 @@ journalctl -o short-iso
 Recommended reporting convention:
 
 ```text
-All incident timestamps are normalized to America/Toronto local time.
+All incident timestamps are normalized to local time.
 ```
 
 The final timeline must contain actual observed timestamps only.
@@ -1270,8 +1218,6 @@ The final timeline must contain actual observed timestamps only.
 ---
 
 # 27. Final Incident Timeline
-
-Use the table below and replace all placeholders with actual evidence from the final lab execution.
 
 | Timestamp | Source | Event | Wazuh / Local Evidence | Rule / ATT&CK | Response |
 |---|---|---|---|---|---|
@@ -1290,38 +1236,7 @@ Use the table below and replace all placeholders with actual evidence from the f
 
 ---
 
-# 28. Evidence Matrix
-
-Populate this table with your final screenshots.
-
-| ID | Evidence | File / Screenshot |
-|---|---|---|
-| E01 | VirtualBox lab topology | [INSERT] |
-| E02 | Wazuh agents active | [INSERT] |
-| E03 | Kali `192.168.50.10` | [INSERT] |
-| E04 | Wazuh Server `192.168.50.20` | [INSERT] |
-| E05 | Windows Endpoint `192.168.50.40` | [INSERT] |
-| E06 | Ubuntu Desktop network | [INSERT] |
-| E07 | Juice Shop running in Docker | [INSERT] |
-| E08 | Juice Shop accessible from Kali | [INSERT] |
-| E09 | Windows 4688 local event | [INSERT] |
-| E10 | Windows 4688 in Wazuh | [INSERT] |
-| E11 | PowerShell 4103 local | [INSERT] |
-| E12 | PowerShell 4104 local | [INSERT] |
-| E13 | PowerShell 4104 in Wazuh | [INSERT] |
-| E14 | Expanded 4104 `scriptBlockText` | [INSERT] |
-| E15 | ARM64 Sysmon | [INSERT] |
-| E16 | Sysmon Event ID 1 | [INSERT] |
-| E17 | Docker JSON log | [INSERT] |
-| E18 | auditd | [INSERT] |
-| E19 | MITRE Dashboard | [INSERT] |
-| E20 | MITRE Framework | [INSERT] |
-| E21 | MITRE Events | [INSERT] |
-| E22 | Final incident timeline | [INSERT] |
-
----
-
-# 29. Validated Results
+# 28. Validated Results
 
 | Capability | Status |
 |---|---|
@@ -1350,11 +1265,9 @@ Populate this table with your final screenshots.
 
 ---
 
-# 30. Additional Detection and Response Scenarios
+# 29. Additional Detection and Response Scenarios
 
-The following sections are intentionally retained for evidence-backed completion. Insert your screenshots and mark each scenario as completed only after validating it in the rebuilt lab.
-
-## 30.1 File Integrity Monitoring
+## 29.1 File Integrity Monitoring
 
 Controlled directory:
 
@@ -1380,7 +1293,7 @@ Potential configuration:
 
 ---
 
-## 30.2 Active Response
+## 29.2 Active Response
 
 Use a controlled detection and response scenario only within the isolated lab.
 
@@ -1414,7 +1327,7 @@ Required final evidence:
 
 ---
 
-## 30.3 Suricata IDS Integration
+## 29.3 Suricata IDS Integration
 
 Potential source:
 
@@ -1443,7 +1356,7 @@ Wazuh collection:
 
 ---
 
-## 30.4 Vulnerability Detection
+## 29.4 Vulnerability Detection
 
 Record actual Wazuh findings only.
 
@@ -1467,9 +1380,9 @@ Remediation
 
 ---
 
-# 31. Major Troubleshooting Lessons
+# 30. Major Troubleshooting Lessons
 
-## 31.1 Collected Event vs Alert
+## 30.1 Collected Event vs Alert
 
 A major lesson was:
 
@@ -1485,7 +1398,7 @@ alert indexing
 
 Each layer requires independent validation.
 
-## 31.2 Structured Field Queries
+## 30.2 Structured Field Queries
 
 Correct:
 
@@ -1499,7 +1412,7 @@ Better than:
 "4104"
 ```
 
-## 31.3 Verify Agent Service First
+## 30.3 Verify Agent Service First
 
 A major Windows issue was:
 
@@ -1515,7 +1428,7 @@ Get-Service *wazuh*
 
 before modifying rules or manager settings.
 
-## 31.4 ARM64 Architecture Matters
+## 30.4 ARM64 Architecture Matters
 
 Windows:
 
@@ -1535,7 +1448,7 @@ Correct:
 Sysmon64a.exe
 ```
 
-## 31.5 Linux ARM VirtualBox Limitation
+## 30.5 Linux ARM VirtualBox Limitation
 
 Kali ARM64 produced:
 
@@ -1545,7 +1458,7 @@ Detected unsupported arm64 machine type
 
 when attempting traditional Linux Guest Additions.
 
-## 31.6 Kernel/Header Synchronization
+## 30.6 Kernel/Header Synchronization
 
 Kali was synchronized to:
 
@@ -1561,7 +1474,7 @@ with:
 
 available.
 
-## 31.7 Docker Log Path
+## 30.7 Docker Log Path
 
 Incorrect:
 
@@ -1577,7 +1490,7 @@ Correct:
 
 ---
 
-# 32. Security Boundaries
+# 31. Security Boundaries
 
 All security-testing activity is restricted to the isolated lab network:
 
@@ -1594,112 +1507,12 @@ The project does not require:
 - credential theft,
 - production testing.
 
-OWASP Juice Shop is used strictly as a local intentionally vulnerable training application.
+OWASP Juice Shop is used strictly as a local, intentionally vulnerable training application.
 
 ---
 
-# 33. Portfolio Relevance
 
-This project demonstrates hands-on experience directly relevant to:
-
-- SOC Analyst
-- Cybersecurity Analyst
-- Detection Engineer
-- Incident Response Analyst
-- SIEM Engineer
-- Security Operations Engineer
-- Blue Team Analyst
-
-The lab demonstrates the ability to:
-
-- deploy security monitoring infrastructure,
-- configure endpoint telemetry,
-- troubleshoot agents,
-- investigate structured event fields,
-- correlate Windows telemetry,
-- monitor containers,
-- interpret MITRE ATT&CK,
-- reconstruct incident timelines,
-- document technical findings,
-- and validate detection pipelines.
-
----
-
-# 34. Suggested GitHub Repository Structure
-
-```text
-Threat-Detection-Response-Wazuh/
-│
-├── README.md
-│
-├── docs/
-│   ├── architecture.md
-│   ├── installation.md
-│   ├── windows-telemetry.md
-│   ├── linux-telemetry.md
-│   ├── docker-monitoring.md
-│   ├── mitre-attack.md
-│   ├── incident-timeline.md
-│   └── troubleshooting.md
-│
-├── configs/
-│   ├── windows-ossec-example.xml
-│   ├── ubuntu-ossec-example.xml
-│   ├── sysmonconfig.xml
-│   └── local-rules-example.xml
-│
-├── evidence/
-│   ├── wazuh/
-│   ├── windows/
-│   ├── linux/
-│   ├── docker/
-│   └── mitre/
-│
-└── diagrams/
-    └── architecture.png
-```
-
-Do not upload:
-
-- passwords,
-- API keys,
-- private keys,
-- authentication tokens,
-- sensitive personal information.
-
----
-
-# 35. Recommended Screenshot Order
-
-1. VirtualBox topology
-2. Wazuh agents
-3. Kali IP
-4. Wazuh IP
-5. Windows IP
-6. Ubuntu IP
-7. Juice Shop Docker container
-8. Juice Shop in Kali
-9. Windows 4688 local
-10. Windows 4688 in Wazuh
-11. PowerShell 4103
-12. PowerShell 4104 local
-13. PowerShell 4104 in Wazuh
-14. Expanded `scriptBlockText`
-15. Sysmon ARM64
-16. Sysmon Event ID 1
-17. Docker logs
-18. auditd
-19. MITRE Dashboard
-20. MITRE Framework
-21. MITRE Events
-22. FIM
-23. Active Response
-24. Vulnerability Detection
-25. Final incident timeline
-
----
-
-# 36. Final Technical Architecture
+# 32. Technical Architecture
 
 ```text
                          +-------------------------+
@@ -1744,7 +1557,7 @@ Do not upload:
 
 ---
 
-# 37. Conclusion
+# 33. Conclusion
 
 The Threat Detection & Response with Wazuh project establishes a functional, multi-platform security-monitoring laboratory on Apple Silicon.
 
@@ -1809,43 +1622,3 @@ The ARM64-specific troubleshooting performed during the project also demonstrate
 The final result is a reusable SOC environment capable of supporting continued threat hunting, detection engineering, container security monitoring, incident response, MITRE ATT&CK analysis, FIM, Active Response, IDS integration, and vulnerability-management exercises.
 
 ---
-
-# 38. Current Project Status
-
-## Completed / Validated
-
-- Wazuh infrastructure
-- isolated network
-- Wazuh agents
-- Juice Shop deployment
-- Kali reachability
-- Windows Security auditing
-- Event ID `4688`
-- PowerShell Module Logging
-- PowerShell Script Block Logging
-- Event ID `4104` in Wazuh
-- script-block content in Wazuh
-- ARM64 Sysmon
-- Sysmon Event ID `1`
-- Docker JSON log discovery
-- Ubuntu journald collection
-- MITRE Dashboard
-- MITRE Framework
-- MITRE Events
-- incident timeline methodology
-
-## Evidence to Insert / Finalize
-
-- Ubuntu exact internal IP
-- FIM evidence
-- Active Response evidence
-- Suricata evidence, if included
-- Vulnerability Detection evidence
-- final incident timeline
-- final screenshots throughout this report
-
----
-
-# 39. Security Engineering Principle
-
-> A detection is not complete because an alert exists. It is complete when the telemetry source is understood, collection is verified, the event is explainable, the detection is reproducible, the investigation is evidence-based, and the response can be validated.
