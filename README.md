@@ -404,10 +404,8 @@ nmap -n -Pn -sT -sV -p 3000 <UBUNTU-IP>
 
 All testing is restricted to the private `192.168.50.0/24` lab network.
 
-### Evidence Placeholder
-
-> **Insert Screenshot:** Kali IP and connectivity  
-> **Suggested caption:** *Figure 10 — Kali Linux using 192.168.50.10 on the isolated wazuh-lab network.*
+![VirtualBox VM Inventory](evidence/Kali%20IP%20Connectivity.png)
+*Figure 10 — Kali Linux using 192.168.50.10 on the isolated wazuh-lab network.*
 
 ---
 
@@ -461,13 +459,11 @@ The application was successfully accessed from Kali across the internal lab netw
 
 ### Evidence Placeholder
 
-> **Insert Screenshot:** `docker ps` showing Juice Shop  
-> **Suggested caption:** *Figure 11 — OWASP Juice Shop running as a Docker container on Ubuntu Desktop.*
+![VirtualBox VM Inventory](evidence/Juice%20Shop%20Running%20as%20Docker%20on%20Ubuntu.png) 
+*Figure 11 — OWASP Juice Shop running as a Docker container on Ubuntu Desktop.*
 
-### Evidence Placeholder
-
-> **Insert Screenshot:** Juice Shop opened from Kali  
-> **Suggested caption:** *Figure 12 — OWASP Juice Shop successfully accessed from Kali over the internal lab network.*
+![VirtualBox VM Inventory](evidence/Juice%20Shop%20open%20from%20Kali.png) 
+*Figure 12 — OWASP Juice Shop successfully accessed from Kali over the internal lab network.*
 
 ---
 
@@ -513,15 +509,11 @@ Validation:
 sudo systemctl status wazuh-agent --no-pager
 ```
 
-### Evidence Placeholder
+![VirtualBox VM Inventory](evidence/Juice%20Shop%20Running%20as%20Docker%20on%20Ubuntu%20Desktop.png) 
+*Figure 13 — Raw Docker JSON logs for the Juice Shop container.*
 
-> **Insert Screenshot:** Docker JSON log output  
-> **Suggested caption:** *Figure 13 — Raw Docker JSON logs for the Juice Shop container.*
-
-### Evidence Placeholder
-
-> **Insert Screenshot:** Wazuh Docker localfile configuration  
-> **Suggested caption:** *Figure 14 — Ubuntu Wazuh agent configured to collect Docker JSON logs.*
+![VirtualBox VM Inventory](evidence/Wazuh%20Docker%20localfile%20configuration.png)
+*Figure 14 — Ubuntu Wazuh agent configured to collect Docker JSON logs.*
 
 ---
 
@@ -547,10 +539,8 @@ Additional local sources included:
 
 This provides operating-system telemetry without requiring all events to be duplicated into traditional syslog files.
 
-### Evidence Placeholder
-
-> **Insert Screenshot:** Ubuntu ossec.conf journald configuration  
-> **Suggested caption:** *Figure 15 — Wazuh agent configured to collect Ubuntu journald telemetry.*
+![VirtualBox VM Inventory](evidence/Wazuh%20agent%20collecting%20Ubuntu%20journald%20telemetry.png) 
+*Figure 15 — Wazuh agent configured to collect Ubuntu journald telemetry.*
 
 ---
 
@@ -594,15 +584,11 @@ Recent events:
 sudo ausearch -ts recent
 ```
 
-### Evidence Placeholder
+![VirtualBox VM Inventory](evidence/Auditd%20enabled%20on%20Ubuntu%20Desktop.png)
+*Figure 16 — auditd enabled on Ubuntu Desktop for Linux audit telemetry.*
 
-> **Insert Screenshot:** auditd status / audit rules  
-> **Suggested caption:** *Figure 16 — auditd enabled on Ubuntu Desktop for Linux audit telemetry.*
-
-### Evidence Placeholder
-
-> **Insert Screenshot:** Wazuh audit log collection block  
-> **Suggested caption:** *Figure 17 — Wazuh configured to collect `/var/log/audit/audit.log`.*
+![VirtualBox VM Inventory](evidence/Wazuh%20configured%20to%20collect%20audit%20logs.png)
+*Figure 17 — Wazuh configured to collect `/var/log/audit/audit.log`.*
 
 ---
 
