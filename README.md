@@ -463,6 +463,7 @@ The application was successfully accessed from Kali across the internal lab netw
 *Figure 11 — OWASP Juice Shop running as a Docker container on Ubuntu Desktop.*
 
 ![Juice Shop open from Kali](evidence/Fig.%2012%20-%20Juice%20Shop%20open%20from%20Kali.png)
+
 *Figure 12 — OWASP Juice Shop successfully accessed from Kali over the internal lab network.*
 
 ---
@@ -509,11 +510,11 @@ Validation:
 sudo systemctl status wazuh-agent --no-pager
 ```
 
-![VirtualBox VM Inventory](evidence/Juice%20Shop%20Running%20as%20Docker%20on%20Ubuntu%20Desktop.png) 
+![Juice Shop Running as Docker on Ubuntu Desktop](evidence/Fig.%2013%20-%20Juice%20Shop%20Running%20as%20Docker%20on%20Ubuntu%20Desktop.png)
 
 *Figure 13 — Raw Docker JSON logs for the Juice Shop container.*
 
-![VirtualBox VM Inventory](evidence/Wazuh%20Docker%20localfile%20configuration.png)
+![Wazuh Docker localfile configuration](evidence/Fig.%2014%20-%20Wazuh%20Docker%20localfile%20configuration.png)
 
 *Figure 14 — Ubuntu Wazuh agent configured to collect Docker JSON logs.*
 
@@ -541,7 +542,7 @@ Additional local sources included:
 
 This provides operating-system telemetry without requiring all events to be duplicated into traditional syslog files.
 
-![VirtualBox VM Inventory](evidence/Wazuh%20agent%20collecting%20Ubuntu%20journald%20telemetry.png) 
+![Wazuh agent collecting Ubuntu journald telemetry](evidence/Fig.%2015%20-%20Wazuh%20agent%20collecting%20Ubuntu%20journald%20telemetry.png)
 
 *Figure 15 — Wazuh agent configured to collect Ubuntu journald telemetry.*
 
@@ -587,8 +588,7 @@ Recent events:
 sudo ausearch -ts recent
 ```
 
-![VirtualBox VM Inventory](evidence/Auditd%20enabled%20on%20Ubuntu%20Desktop.png)
-
+![Auditd enabled on Ubuntu Desktop](evidence/Fig.%2016%20-%20Auditd%20enabled%20on%20Ubuntu%20Desktop.png)
 *Figure 16 — auditd enabled on Ubuntu Desktop for Linux audit telemetry.*
 
 ![VirtualBox VM Inventory](evidence/Wazuh%20configured%20to%20collect%20audit%20logs.png)
