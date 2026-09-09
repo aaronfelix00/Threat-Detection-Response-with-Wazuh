@@ -183,7 +183,7 @@ Architecture: ARM64 / Apple Silicon
 The ARM64 architecture significantly influenced deployment decisions, especially for Windows Sysmon and Linux display integration.
 
 > ![VirtualBox VM Inventory](evidence/VirtualBox%20Showing%20all%20VMs.png)
-*Figure 2 — VirtualBox showing the Wazuh Server, Kali Linux, Windows Endpoint, and Ubuntu Desktop virtual machines used in the lab.*
+*Figure 1 — VirtualBox showing the Wazuh Server, Kali Linux, Windows Endpoint, and Ubuntu Desktop virtual machines used in the lab.*
 
 ---
 
@@ -197,10 +197,8 @@ The ARM64 architecture significantly influenced deployment decisions, especially
 | Ubuntu Desktop | Ubuntu Desktop | Linux endpoint and Docker host |
 | OWASP Juice Shop | Docker container | Intentionally vulnerable web application |
 
-### Evidence Placeholder
-
-> **Insert Screenshot:** VirtualBox VM inventory  
-> **Suggested caption:** *Figure 2 — VirtualBox showing the Wazuh Server, Kali, Windows Endpoint, and Ubuntu Desktop virtual machines.*
+> ![VirtualBox VM Inventory](evidence/VirtualBox%20Showing%20all%20VMs.png)
+*Figure 2 — VirtualBox showing the Wazuh Server, Kali Linux, Windows Endpoint, and Ubuntu Desktop virtual machines used in the lab.*
 
 ---
 
@@ -237,11 +235,11 @@ Confirmed addresses:
 ```text
 Kali Linux        192.168.50.10
 Wazuh Server      192.168.50.20
+Ubuntu Desktop    192.168.50.30
 Windows Endpoint  192.168.50.40
-Ubuntu Desktop    [INSERT CURRENT UBUNTU INTERNAL IP]
 ```
 
-The lab network does not use a gateway on the internal adapter. The NAT adapter remains responsible for Internet routing.
+The lab network does not use a gateway on the internal adapter. The NAT adapter handles Internet routing.
 
 ```text
                          INTERNET
