@@ -263,17 +263,17 @@ The lab network does not use a gateway on the internal adapter. The NAT adapter 
                          TCP/3000
 ```
 
-> ![VirtualBox VM Inventory](evidence/Wazuh%20IP.png)
-*Figure 3 — Wazuh Server configured with internal address 192.168.50.20.*
-
 > ![VirtualBox VM Inventory](evidence/Kali%20IP.png)
-*Figure 4 — Kali Linux configured with internal address 192.168.50.10.*
->
-> > ![VirtualBox VM Inventory](evidence/Ubuntu%20IP.png) 
-*Figure 6 — Ubuntu Desktop configured with internal address 192.168.50.30.*
+*Figure 3 — Kali Linux configured with internal address 192.168.50.10.*
+
+> ![VirtualBox VM Inventory](evidence/Wazuh%20IP.png)
+*Figure 4 — Wazuh Server configured with internal address 192.168.50.20.*
+
+> ![VirtualBox VM Inventory](evidence/Ubuntu%20IP.png) 
+*Figure 5 — Ubuntu Desktop configured with internal address 192.168.50.30.*
 
 > ![VirtualBox VM Inventory](evidence/Windows%20IP.png) 
-*Figure 5 — Windows Endpoint configured with internal address 192.168.50.40.*
+*Figure 6 — Windows Endpoint configured with internal address 192.168.50.40.*
 
 ---
 
