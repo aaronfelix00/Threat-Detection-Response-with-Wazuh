@@ -273,6 +273,7 @@ The lab network does not use a gateway on the internal adapter. The NAT adapter 
 *Figure 5 — Ubuntu Desktop configured with internal address 192.168.50.30.*
 
 ![VirtualBox VM Inventory](evidence/Windows%20IP.png) 
+
 *Figure 6 — Windows Endpoint configured with internal address 192.168.50.40.*
 
 ---
@@ -592,7 +593,7 @@ sudo ausearch -ts recent
 
 *Figure 16 — auditd enabled on Ubuntu Desktop for Linux audit telemetry.*
 
-![VirtualBox VM Inventory](evidence/Wazuh%20configured%20to%20collect%20audit%20logs.png)
+![Wazuh configured to collect audit logs](evidence/Fig.%2017%20-%20Wazuh%20configured%20to%20collect%20audit%20logs.png)
 
 *Figure 17 — Wazuh configured to collect `/var/log/audit/audit.log`.*
 
@@ -632,9 +633,9 @@ Successful communication:
 TcpTestSucceeded : True
 ```
 
-![VirtualBox VM Inventory](evidence/Windows%20Endpoint%20Configured%20on%20internal%20network%201a.png) 
+![Windows Endpoint internal network 1a](evidence/Fig.%2018%20-%20Windows%20Endpoint%20Configured%20on%20internal%20network%201a.png)
 
-![VirtualBox VM Inventory](evidence/Windows%20Endpoint%20Configured%20on%20internal%20network%201b.png) 
+![Windows Endpoint internal network 1b](evidence/Fig.%2018%20-%20Windows%20Endpoint%20Configured%20on%20internal%20network%201b.png)
 
 *Figure 18 — Windows Endpoint configured as 192.168.50.40 on the wazuh-lab network.*
 
@@ -698,14 +699,17 @@ data.win.eventdata.subjectUserName
 data.win.system.eventID
 ```
 
-![VirtualBox VM Inventory](evidence/Windows%20Security%20Event%20ID%204688.png) 
+![Windows Security Event ID 4688](evidence/Fig.%2019%20-%20Windows%20Security%20Event%20ID%204688.png)
 
 *Figure 19 — Windows Security Event ID 4688 confirming process-creation auditing.*
 
-![VirtualBox VM Inventory](evidence/Wazuh%20Threat%20Hunting%20WIndows%20Event.png) 
-![VirtualBox VM Inventory](evidence/Wazuh%20Threat%20Hunting%20WIndows%20Event%201a.png)  
-![VirtualBox VM Inventory](evidence/Wazuh%20Threat%20Hunting%20WIndows%20Event%201b.png) 
-![VirtualBox VM Inventory](evidence/Wazuh%20Threat%20Hunting%20WIndows%20Event%201c.png) 
+![Wazuh Threat Hunting Windows Event 1a](evidence/Fig.%2020%20-%20Wazuh%20Threat%20Hunting%20Windows%20Event%201a.png)
+
+![Wazuh Threat Hunting Windows Event 1b](evidence/Fig.%2020%20-%20Wazuh%20Threat%20Hunting%20Windows%20Event%201b.png)
+
+![Wazuh Threat Hunting Windows Event 1c](evidence/Fig.%2020%20-%20Wazuh%20Threat%20Hunting%20Windows%20Event%201c.png)
+
+![Wazuh Threat Hunting Windows Event](evidence/Fig.%2020%20-%20Wazuh%20Threat%20Hunting%20Windows%20Event.png)
 
 *Figure 20 — Wazuh Threat Hunting event showing Windows process creation from Windows-Endpoint.*
 
@@ -765,8 +769,9 @@ A major lesson was that an event can exist locally without appearing in the Wazu
 
 ### Evidence Placeholder
 
-> **Insert Screenshot:** Local PowerShell Event ID 4103  
-> **Suggested caption:** *Figure 21 — PowerShell Module Logging Event ID 4103 generated on the Windows endpoint.*
+![PowerShell Module Logging Event ID 4103](evidence/Fig.%2021%20-%20PowerShell%20Module%20Logging%20Event%20ID%204103.png)
+
+*Figure 21 — PowerShell Module Logging Event ID 4103 generated on the Windows endpoint.*
 
 ---
 
@@ -820,20 +825,17 @@ data.win.eventdata.scriptBlockText
 
 This validated the complete PowerShell telemetry path from script execution to SIEM visibility.
 
-### Evidence Placeholder
+![PowerShell Script Block Logging Event ID 4104](evidence/Fig.%2022%20-%20PowerShell%20Script%20Block%20Logging%20Event%20ID%204104.png)
 
-> **Insert Screenshot:** Local 4104 event  
-> **Suggested caption:** *Figure 22 — PowerShell Script Block Logging Event ID 4104 generated locally.*
+*Figure 22 — PowerShell Script Block Logging Event ID 4104 generated locally.*
 
-### Evidence Placeholder
+![PowerShell 4104 in Wazuh](evidence/Fig.%2023%20-%20PowerShell%204104%20in%20Wazuh%201.png)
 
-> **Insert Screenshot:** 4104 in Wazuh  
-> **Suggested caption:** *Figure 23 — Wazuh Threat Hunting showing PowerShell Event ID 4104 from Windows-Endpoint.*
+*Figure 23 — Wazuh Threat Hunting showing PowerShell Event ID 4104 from Windows-Endpoint.*
 
-### Evidence Placeholder
+![PowerShell 4104 ScriptBlockText](evidence/Fig.%2024%20-%20PowerShell%204104%20in%20Wazuh%20ScriptBlockText.png)
 
-> **Insert Screenshot:** Expanded 4104 event showing scriptBlockText  
-> **Suggested caption:** *Figure 24 — Expanded Wazuh 4104 event displaying the captured PowerShell `scriptBlockText`.*
+*Figure 24 — Expanded Wazuh 4104 event displaying the captured PowerShell `scriptBlockText`.*
 
 ---
 
@@ -928,20 +930,17 @@ Wazuh collection:
 </localfile>
 ```
 
-### Evidence Placeholder
+![Windows endpoint confirming ARM64 architecture](evidence/Fig.%2025%20-%20Windows%20endpoint%20confirming%20ARM64%20architecture.png)
+  
+*Figure 25 — Windows endpoint confirming ARM64 architecture.*
 
-> **Insert Screenshot:** Windows ARM64 architecture  
-> **Suggested caption:** *Figure 25 — Windows endpoint confirming ARM64 architecture.*
+![ARM64 Sysmon installed and running](evidence/Fig.%2026%20-%20ARM64%20Sysmon%20installed%20and%20running%20successfully.png)
+ 
+*Figure 26 — ARM64 Sysmon installed and running successfully.*
 
-### Evidence Placeholder
+![Sysmon Event ID 1](evidence/Fig.%2027%20-%20Sysmon%20Event%20ID%201.png)
 
-> **Insert Screenshot:** Sysmon service running  
-> **Suggested caption:** *Figure 26 — ARM64 Sysmon installed and running successfully.*
-
-### Evidence Placeholder
-
-> **Insert Screenshot:** Sysmon Event ID 1  
-> **Suggested caption:** *Figure 27 — Sysmon Event ID 1 showing process creation telemetry.*
+*Figure 27 — Sysmon Event ID 1 showing process creation telemetry.*
 
 ---
 
@@ -1003,10 +1002,9 @@ Select-Object TimeCreated,Id,Message
 
 The lab does not require real malware to demonstrate Defender integration.
 
-### Evidence Placeholder
+![Windows Defender Operational Telemetry](evidence/Fig.%2028%20-%20Windows%20Defender%20Operational%20Telemetry.png) 
 
-> **Insert Screenshot:** Defender Operational event or Wazuh Defender event  
-> **Suggested caption:** *Figure 28 — Windows Defender Operational telemetry available for Wazuh collection.*
+*Figure 28 — Windows Defender Operational telemetry available for Wazuh collection.*
 
 ---
 
