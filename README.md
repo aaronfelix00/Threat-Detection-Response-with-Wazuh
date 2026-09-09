@@ -703,7 +703,7 @@ data.win.system.eventID
 
 *Figure 19 — Windows Security Event ID 4688 confirming process-creation auditing.*
 
-![Wazuh Threat Hunting Windows Event](evidence/Fig20%20Wazuh%20threat%20hunting%20windows%20event.png)
+![Wazuh Threat Hunting Windows Event](evidence/Fig20%20Wazuh%20threat%20hunting%20windows%20event%20.png)
 
 ![Wazuh Threat Hunting Windows Event 1a](evidence/Fig20_Wazuh_threat_hunting_windows_event_1a.png)
 
@@ -766,8 +766,6 @@ Get-WinEvent -FilterHashtable @{
 Event ID `4103` was successfully generated locally.
 
 A major lesson was that an event can exist locally without appearing in the Wazuh alert index if no qualifying alert rule is triggered.
-
-### Evidence Placeholder
 
 ![PowerShell Module Logging Event ID 4103](evidence/Fig.%2021%20-%20PowerShell%20Module%20Logging%20Event%20ID%204103.png)
 
@@ -938,7 +936,7 @@ Wazuh collection:
  
 *Figure 26 — ARM64 Sysmon installed and running successfully.*
 
-![Sysmon Event ID 1](evidence/Fig27%20sysmon%20event%20ID.png)
+![Sysmon Event ID 1](evidence/Fig27%20sysmon%20event%20ID%20.png)
 
 *Figure 27 — Sysmon Event ID 1 showing process creation telemetry.*
 
