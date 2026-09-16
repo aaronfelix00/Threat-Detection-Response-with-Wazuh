@@ -1205,18 +1205,16 @@ The final timeline must contain actual observed timestamps only.
 
 | Timestamp | Source | Event | Wazuh / Local Evidence | Rule / ATT&CK | Response |
 |---|---|---|---|---|---|
-| [INSERT] | Kali `192.168.50.10` | Initial controlled discovery activity | [INSERT] | [INSERT] | None |
-| [INSERT] | Target endpoint | Endpoint telemetry generated | [INSERT] | [INSERT] | None |
-| [INSERT] | Wazuh | Detection indexed | [INSERT] | [INSERT] | Investigation initiated |
-| [INSERT] | Analyst | Related events correlated | [INSERT] | [INSERT] | Decision |
-| [INSERT] | Endpoint / Wazuh | Response activity | [INSERT] | [INSERT] | Containment |
-| [INSERT] | Analyst | Containment validated | [INSERT] | — | Confirmed |
-| [INSERT] | Environment | Recovery / service restored | [INSERT] | — | Incident closed |
+|  | Kali `192.168.50.10` | Initial controlled discovery activity |  |  |  |
+|  | Target endpoint | Endpoint telemetry generated |  |  |  |
+|  | Wazuh | Detection indexed | |  | Investigation initiated |
+|  | Analyst | Related events correlated |  |  | Decision |
+|  | Endpoint / Wazuh | Response activity |  |  | Containment |
+|  | Analyst | Containment validated |  | — | Confirmed |
+|  | Environment | Recovery / service restored |  | — | Incident closed |
 
-### Evidence Placeholder
 
-> **Insert Screenshot:** Final incident timeline  
-> **Suggested caption:** *Figure 33 — Final incident timeline correlating attacker activity, endpoint telemetry, Wazuh detection, investigation, and response.*
+#> **Suggested caption:** *Figure 33 — Final incident timeline correlating attacker activity, endpoint telemetry, Wazuh detection, investigation, and response.*
 
 ---
 
@@ -1395,7 +1393,7 @@ Better than:
 "4104"
 ```
 
-## 30.3 Verify Agent Service First
+## 30.3 Verify Agent Service First before modifying rules or manager settings.
 
 A major Windows issue was:
 
@@ -1408,8 +1406,6 @@ Always check:
 ```powershell
 Get-Service *wazuh*
 ```
-
-before modifying rules or manager settings.
 
 ## 30.4 ARM64 Architecture Matters
 
